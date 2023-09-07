@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<title>
+		Learn Trading
+	</title>
+	<head> 
+		<h1>Virtual money using learn <br>Stock market</h1>
+		<link rel = "stylesheet" href="style.css">
+		<script src = "myscripts.js"></script>
+	</head>
+
+	<body>
+		<!--Create account code-->
+		<div class ="container" >
+			<div class = "heard">
+				<h2>Create account</h2>
+			</div>
+			<form class = "form" id = "form">
+				<div class = "form-control">
+					<label>Username</label>
+					<input type = "text" placeholder="name"id="username">
+					<i class = "fas fa-check-circle"></i>
+					<i class = "fas fa-exclamation-circle"></i>
+					<small>Error</small>
+					
+
+				</div>
+				<div class="form-control">
+					<label>Email</label>
+					<input type = "email" placeholder="gg@gmail.com" id = "email">
+					<i class = "fas fa-check-circle"></i>
+					<i class = "fas fa-exclamation-circle"></i>
+					<small>Error</small>
+				</div>
+				
+					<div class = "form-control">
+						<label>Password</label>
+						<input type = "password" placeholder="Password"id="password">
+						<i class = "fas fa-check-circle"></i>
+						<i class = "fas fa-exclamation-circle"></i>
+						<small>Error</small>
+	
+					</div>
+					
+						<div class = "form-control">
+							<label>Confirm Password</label>
+							<input type = "password" placeholder="confirm password"
+							id="password2">
+							<i class = "fas fa-check-circle"></i>
+							<i class = "fas fa-exclamation-circle"></i>
+							<small>Error</small>
+
+		
+						</div>
+						<button><a href="http://127.0.0.1:5500/test.html" target="__blank">Submit</a></button>
+
+			</form>
+
+		</div>
+		<script>
+			const form = document.getElementById("form");
+			const username = document.getElementById("username");
+			const email = document.getElementById("email");
+			const password = document.getElementById("password");
+			const password2 = document.getElementById("password2");
+			form.addEventListener('submit',e =>{
+				e.preventDefault();
+				checkInput();
+			});
+			function checkInput(){
+				const usernameValue = username.value.trim();
+
+			}
+
+		</script>
+
+		
+	</body>
+</html>
